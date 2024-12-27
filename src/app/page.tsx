@@ -8,6 +8,15 @@ export default function Home() {
     <main className="min-h-screen bg-gray-900 text-white relative">
       <StarBackground />
       <div className="container mx-auto px-4 py-16">
+        <div className="flex justify-end mb-6">
+          <Link 
+            href="/contact"
+            className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold py-2 px-6 rounded-full transition-colors"
+          >
+            Contact Us
+          </Link>
+        </div>
+      <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold mb-4 text-yellow-400">Star Wars Explorer</h1>
           <p className="text-xl text-gray-300">Discover the galaxy far, far away...</p>
@@ -33,6 +42,7 @@ export default function Home() {
             imagePath="/starship.jpeg"
           />
         </div>
+      </div>
       </div>
     </main>
   )
