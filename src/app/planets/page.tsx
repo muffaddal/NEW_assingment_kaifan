@@ -1,12 +1,6 @@
-import { Planet } from '../types'
-
-async function getPlanets(): Promise<Planet[]> {
-  const res = await fetch('https://swapi.info/api/planets')
-  const data = await res.json()
-  return data;
-}
-
+import { getPlanets } from '../api/planets/PlanetsService'
 import BackButton from '../components/BackButton'
+import { Planet } from '../types'
 
 export default async function Planets() {
   const planets = await getPlanets()
